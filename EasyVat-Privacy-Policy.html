@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the EasyVat Chrome extension.">
+  <title>EasyVat Privacy Policy</title>
+  <style>
+    :root { --bg:#f7faf9; --card:#fff; --ink:#14201d; --muted:#5e6c67; --accent:#087b61; --line:#dfe8e4; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; }
+    main { max-width:860px; margin:40px auto; padding:0 20px 50px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:34px; box-shadow:0 8px 28px rgba(20,32,29,.06); }
+    h1 { margin:0 0 6px; font-size:34px; line-height:1.2; }
+    h2 { margin-top:30px; font-size:21px; }
+    p, li { color:#24332e; }
+    .meta { color:var(--muted); margin-bottom:26px; }
+    a { color:var(--accent); }
+    ul { padding-left:22px; }
+    footer { margin-top:24px; color:var(--muted); font-size:14px; text-align:center; }
+    @media (max-width:600px) { main { margin:20px auto; } .card { padding:22px; } h1 { font-size:28px; } }
+  </style>
+</head>
+<body>
+<main>
+  <article class="card">
+    <h1>EasyVat Privacy Policy</h1>
+    <div class="meta"><strong>Effective date:</strong> September 12, 2026</div>
+
+    <p>
+      EasyVat ("EasyVat", "the extension", "we", "our", or "us") is a Chrome extension designed to assist users with routine VAT-return tasks on the Bangladesh eVAT portal.
+      This Privacy Policy explains what information the extension handles, why it is handled, where it is stored or transmitted, and the choices available to users.
+    </p>
+
+    <h2>1. Information EasyVat Handles</h2>
+    <p>Depending on how the extension is configured and used, EasyVat may handle:</p>
+    <ul>
+      <li><strong>VAT account information:</strong> business name, mobile/username, and VAT portal password supplied through the extension's configured data source or imported account file.</li>
+      <li><strong>Configuration information:</strong> Google Apps Script Web App URL, a user-defined saved-link name, selected sheet year, selected month, and extension automation state.</li>
+      <li><strong>VAT workflow information:</strong> the row, month, and submission/status information needed to automate and verify a VAT-return workflow.</li>
+    </ul>
+
+    <h2>2. How Information Is Used</h2>
+    <p>EasyVat uses the information above only to provide its core functionality, including:</p>
+    <ul>
+      <li>retrieving eligible VAT-account records from the Google Apps Script Web App configured by the user;</li>
+      <li>using supplied account credentials to sign in to <strong>https://vat.gov.bd/</strong>;</li>
+      <li>automating supported VAT-return form interactions on the VAT portal;</li>
+      <li>checking the configured Apps Script service for processing status and updating the relevant sheet status after a successful submission; and</li>
+      <li>remembering user-selected settings and saved Apps Script links on the local browser profile.</li>
+    </ul>
+
+    <h2>3. Where Information Is Stored</h2>
+    <p>
+      EasyVat stores its local configuration and locally imported account data in Chrome's extension storage on the user's device.
+      Data retrieved from or sent to a Google Apps Script Web App is processed through the Web App URL chosen by the user.
+      EasyVat does not operate a separate central database for user account records through the extension itself.
+    </p>
+
+    <h2>4. Data Transmission and Third Parties</h2>
+    <p>
+      EasyVat communicates with two categories of external services required for its operation:
+    </p>
+    <ul>
+      <li><strong>Bangladesh eVAT portal:</strong> <strong>https://vat.gov.bd/</strong>, where the extension performs the supported VAT workflow using the account information supplied for that task.</li>
+      <li><strong>Google Apps Script:</strong> the Google Apps Script Web App URL configured by the user. That service may access the spreadsheet or other backend resources connected to the Apps Script deployment. The privacy practices of that separately configured service are governed by its owner/operator.</li>
+    </ul>
+    <p>
+      EasyVat does not sell personal information and does not use user information for advertising, behavioral profiling, or unrelated marketing purposes.
+      The extension does not intentionally transmit account information to unrelated third-party services.
+    </p>
+
+    <h2>5. Passwords and Sensitive Account Information</h2>
+    <p>
+      VAT account passwords may be handled because they are required to log in to the VAT portal when the automation runs.
+      Users should only import or configure credentials they are authorized to use.
+      Users are responsible for securing their Chrome profile, device, imported account files, and any Google Apps Script or spreadsheet used with EasyVat.
+    </p>
+
+    <h2>6. Data Retention and Deletion</h2>
+    <p>
+      Local settings and imported account data remain in Chrome extension storage until they are removed by the user, cleared through browser/extension data controls, or replaced by a later configuration.
+      Data maintained in a Google Sheet or another backend connected to the user's Apps Script is retained according to the settings and practices of that backend's owner.
+      EasyVat does not independently retain a separate server-side copy of that backend data.
+    </p>
+
+    <h2>7. Permissions Used by the Extension</h2>
+    <p>EasyVat requests Chrome permissions that support its functionality, including:</p>
+    <ul>
+      <li><strong>activeTab / tabs:</strong> to interact with the current VAT portal tab and manage the automation flow;</li>
+      <li><strong>scripting:</strong> to run the required extension scripts for the supported VAT portal workflow;</li>
+      <li><strong>storage:</strong> to save extension configuration and local workflow data;</li>
+      <li><strong>alarms:</strong> to maintain the extension's background automation during longer workflows; and</li>
+      <li><strong>host access:</strong> to the Bangladesh eVAT portal and Google Apps Script Web App domains required by the extension.</li>
+    </ul>
+
+    <h2>8. Security</h2>
+    <p>
+      EasyVat uses Chrome's extension storage and HTTPS connections for its supported external services.
+      However, no browser extension, transmission method, or storage mechanism can be guaranteed to be completely secure.
+      Users should keep Chrome and their operating system updated and protect access to their device and Google account.
+    </p>
+
+    <h2>9. User Choices</h2>
+    <p>
+      Users can stop automation at any time, remove saved Apps Script links, clear extension data, delete imported account files, or uninstall EasyVat.
+      Removing the extension does not delete information already stored in a user's own Google Sheet or other backend.
+    </p>
+
+    <h2>10. Children's Privacy</h2>
+    <p>
+      EasyVat is intended for users who are authorized to manage VAT accounts and business tax-return workflows. It is not designed for children.
+    </p>
+
+    <h2>11. Changes to This Privacy Policy</h2>
+    <p>
+      We may update this Privacy Policy when EasyVat's functionality or data practices change. The updated version will be published at the same policy URL and will include a revised effective date.
+    </p>
+
+    <h2>12. Contact</h2>
+    <p>
+      For privacy questions or requests related to EasyVat, please use the contact information provided by the EasyVat developer on the Chrome Web Store listing.
+    </p>
+
+    <h2>13. Acceptance</h2>
+    <p>
+      By installing or using EasyVat, you acknowledge that you have read this Privacy Policy and understand how the extension handles information as described above.
+    </p>
+  </article>
+  <footer>EasyVat · Privacy Policy</footer>
+</main>
+</body>
+</html>
